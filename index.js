@@ -41,6 +41,7 @@ const makeCommit = (n) => {
     .add(y, "d")
     .format();
   const data = { date: DATE };
+  console.log(DATE);
   jsonfile.writeFile(FILE_PATH, data, () => {
     simpleGit()
       .add([FILE_PATH])
